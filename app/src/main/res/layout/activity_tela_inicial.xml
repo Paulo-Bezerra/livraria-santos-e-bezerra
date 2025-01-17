@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        android:orientation="vertical"
+        tools:context=".TelaInicial">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20sp"
+            app:srcCompat="@drawable/logo" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:background="@drawable/container_background"
+            android:orientation="vertical">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_cadastrarLivro"
+                style="@style/Button"
+                android:drawableRight="@drawable/ic_add"
+                android:text="Cadastrar livro(s)" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_listarLivros"
+                style="@style/Button"
+                android:drawableRight="@drawable/ic_listar"
+                android:text="Listar livros" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_excluirLivro"
+                style="@style/Button"
+                android:drawableRight="@drawable/ic_delet"
+                android:text="Excluir livro(s)" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/bt_alterarLivro"
+                style="@style/Button"
+                android:drawableRight="@drawable/ic_alterar"
+                android:text="Alterar livro(s)" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>
